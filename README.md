@@ -1,6 +1,6 @@
 # Kunal Vats - Machine Learning Engineer Portfolio
 
-![Portfolio Banner](assets/images/banner.png)
+![Portfolio Banner](assets/images/profile.png)
 
 ## Overview
 
