@@ -10,150 +10,222 @@
    DOM LOADED
    ========================================================== */
 
-
 document.addEventListener(
-"DOMContentLoaded",
-()=>{
+    "DOMContentLoaded",
+    () => {
 
 
-    const contactForm =
-    document.getElementById(
-        "contactForm"
-    );
-
-
-
-    if(!contactForm){
-
-        return;
-
-    }
-
-
-
-
-
-    /* ==========================================
-       FORM SUBMIT
-    ========================================== */
-
-
-    contactForm.addEventListener(
-    "submit",
-    function(event){
-
-
-        event.preventDefault();
-
-
-
-        const name =
+        const contactForm =
         document.getElementById(
-            "name"
-        ).value.trim();
+            "contactForm"
+        );
 
 
-
-        const email =
-        document.getElementById(
-            "email"
-        ).value.trim();
-
-
-
-        const subject =
-        document.getElementById(
-            "subject"
-        ).value.trim();
-
-
-
-        const message =
-        document.getElementById(
-            "message"
-        ).value.trim();
-
-
-
-
-
-        /* ==========================================
-           Validation
-        ========================================== */
-
-
-        if(
-            name === "" ||
-            email === "" ||
-            message === ""
-        ){
-
-
-            showMessage(
-
-                "Please fill all required fields.",
-
-                "error"
-
-            );
-
+        if(!contactForm){
 
             return;
-
 
         }
 
 
 
 
-
-        if(!validateEmail(email)){
-
-
-            showMessage(
-
-                "Please enter a valid email address.",
-
-                "error"
-
-            );
-
-
-            return;
-
-
-        }
-
-
-
-
-
         /* ==========================================
-           Success Response
-           Replace later with EmailJS/API
+           FORM SUBMIT
         ========================================== */
 
 
-        showMessage(
+        contactForm.addEventListener(
+            "submit",
+            async function(event){
 
-            "Message sent successfully. I will contact you soon.",
 
-            "success"
+                event.preventDefault();
+
+
+
+                const name =
+                document.getElementById(
+                    "name"
+                ).value.trim();
+
+
+
+                const email =
+                document.getElementById(
+                    "email"
+                ).value.trim();
+
+
+
+                const subject =
+                document.getElementById(
+                    "subject"
+                ).value.trim();
+
+
+
+                const message =
+                document.getElementById(
+                    "message"
+                ).value.trim();
+
+
+
+
+
+
+                /* ==========================================
+                   VALIDATION
+                ========================================== */
+
+
+                if(
+                    name === "" ||
+                    email === "" ||
+                    subject === "" ||
+                    message === ""
+                ){
+
+
+                    showMessage(
+
+                        "Please fill all required fields.",
+
+                        "error"
+
+                    );
+
+
+                    return;
+
+
+                }
+
+
+
+
+
+                if(!validateEmail(email)){
+
+
+                    showMessage(
+
+                        "Please enter a valid email address.",
+
+                        "error"
+
+                    );
+
+
+                    return;
+
+
+                }
+
+
+
+
+
+                /* ==========================================
+                   FORMSPREE SUBMISSION
+                ========================================== */
+
+
+                const formData =
+                new FormData(contactForm);
+
+
+
+                try{
+
+
+                    const response =
+                    await fetch(
+
+                        "https://formspree.io/f/xnjeardv",
+
+                        {
+
+                            method:"POST",
+
+                            body:formData,
+
+                            headers:{
+
+                                "Accept":"application/json"
+
+                            }
+
+                        }
+
+                    );
+
+
+
+
+
+                    if(response.ok){
+
+
+                        showMessage(
+
+                            "Message sent successfully. I will contact you soon.",
+
+                            "success"
+
+                        );
+
+
+                        contactForm.reset();
+
+
+
+                    }
+                    else{
+
+
+                        showMessage(
+
+                            "Message could not be sent. Please try again.",
+
+                            "error"
+
+                        );
+
+
+                    }
+
+
+
+
+
+                }
+                catch(error){
+
+
+
+                    showMessage(
+
+                        "Network error. Please try again.",
+
+                        "error"
+
+                    );
+
+
+                }
+
+
+
+            }
 
         );
 
 
+    }
 
-        contactForm.reset();
-
-
-
-    });
-
-
-
-});
-
+);
 
 
 
@@ -179,6 +251,7 @@ function validateEmail(email){
 
 
 }
+
 
 
 
@@ -250,52 +323,17 @@ function showMessage(
 
 
 
+
     setTimeout(
-    ()=>{
+        ()=>{
 
 
-        alertBox.textContent="";
+            alertBox.textContent = "";
 
 
-    },
-    4000);
-
+        },
+        4000
+    );
 
 
 }
-
-
-
-
-
-/* ==========================================================
-   EMAILJS READY FUNCTION
-   ========================================================== */
-
-
-/*
-
-Later you can integrate EmailJS:
-
-1. Add EmailJS CDN:
-
-<script src=
-"https://cdn.emailjs.com/dist/email.min.js">
-</script>
-
-
-2. Initialize:
-
-emailjs.init("YOUR_PUBLIC_KEY");
-
-
-3. Send:
-
-emailjs.send(
-"service_id",
-"template_id",
-formData
-);
-
-
-*/

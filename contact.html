@@ -266,70 +266,55 @@
                 </h2>
 
             </div>
-
-            <form id="contactForm">
-
-                <div class="form-group">
-
-                    <label>
-
-                        Full Name
-
-                    </label>
-
-                    <input type="text"
-                           placeholder="Enter your name"
-                           required>
-
-                </div>
+               <br>
+              <form id="contactForm" action="https://formspree.io/f/xnjeardv" method="POST">
 
                 <div class="form-group">
-
-                    <label>
-
-                        Email Address
-
-                    </label>
-
-                    <input type="email"
-                           placeholder="Enter your email"
-                           required>
-
+                    <label>Full Name</label>
+                    <input 
+                        id="name"
+                        name="name"
+                        type="text"
+                        placeholder="Enter your name"
+                        required>
                 </div>
+
 
                 <div class="form-group">
-
-                    <label>
-
-                        Subject
-
-                    </label>
-
-                    <input type="text"
-                           placeholder="Subject"
-                           required>
-
+                    <label>Email Address</label>
+                    <input 
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="Enter your email"
+                        required>
                 </div>
+
 
                 <div class="form-group">
-
-                    <label>
-
-                        Message
-
-                    </label>
-
-                    <textarea rows="6"
-                              placeholder="Write your message..."
-                              required></textarea>
-
+                    <label>Subject</label>
+                    <input 
+                        id="subject"
+                        name="_subject"
+                        type="text"
+                        placeholder="Subject"
+                        required>
                 </div>
 
-                <button type="submit"
-                        class="btn primary-btn">
 
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea 
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message..."
+                        required></textarea>
+                </div>
+
+
+                <button type="submit" class="btn primary-btn">
                     Send Message
-
                 </button>
 
             </form>
