@@ -1,0 +1,23 @@
+/*
+   Robots.txt
+   Portfolio Website
+   Author: Kunal Vats
+*/
+
+
+User-agent: *
+
+Allow: /
+
+
+# Block unnecessary files
+
+Disallow: /assets/js/
+
+Disallow: /assets/fonts/
+
+
+
+# Sitemap Location
+
+Sitemap: https://practical-work.github.io/portfolio/sitemap.xml

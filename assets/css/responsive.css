@@ -1,0 +1,685 @@
+/* ==========================================================
+   RESPONSIVE.CSS
+   Portfolio Website
+   Author : Kunal Vats
+   ========================================================== */
+
+
+/* ==========================================================
+   LARGE TABLETS & SMALL LAPTOPS
+   (1200px and below)
+   ========================================================== */
+
+@media(max-width:1200px){
+
+    :root{
+
+        --section-padding:80px 0;
+
+    }
+
+
+    .container{
+
+        width:92%;
+
+    }
+
+
+    .hero-container{
+
+        gap:40px;
+
+    }
+
+
+    .hero-title{
+
+        font-size:48px;
+
+    }
+
+
+    .profile-placeholder{
+
+        width:360px;
+
+        height:360px;
+
+        font-size:90px;
+
+    }
+
+
+    .about-container{
+
+        gap:40px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   TABLETS
+   (992px and below)
+   ========================================================== */
+
+@media(max-width:992px){
+
+
+    /* Header */
+
+    .nav-menu{
+
+        position:fixed;
+
+        top:var(--header-height);
+
+        left:-100%;
+
+        width:100%;
+
+        height:calc(100vh - var(--header-height));
+
+        background:var(--background);
+
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
+
+        transition:var(--transition);
+
+    }
+
+
+    .nav-menu.active{
+
+        left:0;
+
+    }
+
+
+    .nav-menu ul{
+
+        flex-direction:column;
+
+        gap:30px;
+
+    }
+
+
+    .menu-btn{
+
+        display:block;
+
+    }
+
+
+    /* Hero */
+
+    .hero-container{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+
+    .hero-content{
+
+        order:1;
+
+    }
+
+
+    .hero-image{
+
+        order:0;
+
+    }
+
+
+    .hero-description{
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+
+    .hero-badges{
+
+        justify-content:center;
+
+    }
+
+
+    .social-links{
+
+        justify-content:center;
+
+    }
+
+
+
+    /* About */
+
+    .about-container{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+
+    .about-image{
+
+        order:-1;
+
+    }
+
+
+    .about-info{
+
+        max-width:600px;
+
+        margin:30px auto;
+
+    }
+
+
+
+    /* Timeline */
+
+    .timeline::before{
+
+        left:20px;
+
+    }
+
+
+    .timeline-item{
+
+        width:100%;
+
+        left:0!important;
+
+        padding-left:60px;
+
+        text-align:left!important;
+
+    }
+
+
+    .timeline-item::before{
+
+        left:11px!important;
+
+    }
+
+
+
+    /* Footer */
+
+    .footer-grid{
+
+        gap:40px;
+
+    }
+
+
+}
+
+/* ==========================================================
+   MOBILE DEVICES
+   (768px and below)
+   ========================================================== */
+
+@media(max-width:768px){
+
+
+    :root{
+
+        --section-padding:70px 0;
+
+        --font-size-4xl:42px;
+
+        --font-size-3xl:34px;
+
+        --font-size-2xl:26px;
+
+    }
+
+
+
+    /* Container */
+
+    .container{
+
+        width:94%;
+
+    }
+
+
+
+    /* Header */
+
+    .header{
+
+        height:70px;
+
+    }
+
+
+    .navbar{
+
+        height:70px;
+
+    }
+
+
+    .logo{
+
+        font-size:26px;
+
+    }
+
+
+    #themeToggle{
+
+        width:40px;
+
+        height:40px;
+
+    }
+
+
+
+    /* Hero */
+
+    .hero{
+
+        padding-top:130px;
+
+        padding-bottom:80px;
+
+    }
+
+
+    .hero-title{
+
+        font-size:40px;
+
+    }
+
+
+    .hero-description{
+
+        font-size:15px;
+
+    }
+
+
+    .profile-placeholder{
+
+        width:280px;
+
+        height:280px;
+
+        font-size:70px;
+
+    }
+
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+
+    .hero-buttons .btn{
+
+        width:100%;
+
+    }
+
+
+    .hero-badges{
+
+        gap:10px;
+
+    }
+
+
+    .badge{
+
+        font-size:12px;
+
+        padding:8px 14px;
+
+    }
+
+
+
+    /* Section Heading */
+
+    .section-heading{
+
+        margin-bottom:40px;
+
+    }
+
+
+    .section-heading h2{
+
+        font-size:32px;
+
+    }
+
+
+
+    /* Buttons */
+
+    .btn{
+
+        width:100%;
+
+        padding:13px 20px;
+
+    }
+
+
+
+    /* About */
+
+    .about-info{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    /* Cards */
+
+    .skills-grid,
+    .projects-grid,
+    .resume-grid,
+    .contact-grid,
+    .stats-grid,
+    .goals-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .skill-card,
+    .project-card,
+    .resume-card,
+    .contact-card,
+    .experience-card,
+    .stat-card{
+
+        padding:22px;
+
+    }
+
+
+
+    /* Projects */
+
+    .project-image{
+
+        height:180px;
+
+    }
+
+
+
+    /* Statistics */
+
+    .stat-card h2{
+
+        font-size:38px;
+
+    }
+
+
+
+    /* Resume */
+
+    .resume-buttons{
+
+        flex-direction:column;
+
+    }
+
+
+    .resume-buttons .btn{
+
+        width:100%;
+
+    }
+
+
+
+    /* Contact Form */
+
+    #contactForm{
+
+        width:100%;
+
+    }
+
+
+    .form-group input,
+    .form-group textarea{
+
+        padding:13px;
+
+    }
+
+
+
+    /* CTA */
+
+    .cta-card{
+
+        padding:40px 20px;
+
+    }
+
+
+    .cta-card h2{
+
+        font-size:28px;
+
+    }
+
+
+    .cta-buttons{
+
+        flex-direction:column;
+
+    }
+
+
+    .cta-buttons .btn{
+
+        width:100%;
+
+    }
+
+
+
+    /* Footer */
+
+    .footer{
+
+        padding:60px 0 25px;
+
+    }
+
+
+    .footer-bottom{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   SMALL MOBILE DEVICES
+   (480px and below)
+   ========================================================== */
+
+@media(max-width:480px){
+
+
+    :root{
+
+        --font-size-4xl:34px;
+
+        --font-size-3xl:28px;
+
+        --font-size-xl:20px;
+
+    }
+
+
+
+    .logo{
+
+        font-size:22px;
+
+    }
+
+
+    .hero-title{
+
+        font-size:34px;
+
+    }
+
+
+    .hero-subtitle{
+
+        font-size:14px;
+
+    }
+
+
+    .profile-placeholder{
+
+        width:220px;
+
+        height:220px;
+
+        font-size:55px;
+
+    }
+
+
+    .page-banner{
+
+        padding-top:130px;
+
+        padding-bottom:70px;
+
+    }
+
+
+    .page-banner h1{
+
+        font-size:34px;
+
+    }
+
+
+    .section-heading h2{
+
+        font-size:28px;
+
+    }
+
+
+    .experience-card,
+    .resume-item,
+    .availability-card,
+    .location-card{
+
+        padding:20px;
+
+    }
+
+
+    .social-links a{
+
+        width:42px;
+
+        height:42px;
+
+    }
+
+
+    .back-to-top{
+
+        right:15px;
+
+        bottom:15px;
+
+        width:42px;
+
+        height:42px;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   LANDSCAPE MOBILE
+   ========================================================== */
+
+@media(max-height:500px) and (orientation:landscape){
+
+
+    .hero{
+
+        padding-top:110px;
+
+    }
+
+
+    .profile-placeholder{
+
+        width:200px;
+
+        height:200px;
+
+    }
+
+}

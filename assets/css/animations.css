@@ -1,0 +1,600 @@
+/* ==========================================================
+   ANIMATIONS.CSS
+   Portfolio Website
+   Author : Kunal Vats
+   ========================================================== */
+
+
+/* ==========================================================
+   FADE ANIMATIONS
+   ========================================================== */
+
+.fade-in{
+
+    opacity:0;
+
+    animation:fadeIn 1s ease forwards;
+
+}
+
+
+.fade-in-delay{
+
+    opacity:0;
+
+    animation:fadeIn 1s ease .3s forwards;
+
+}
+
+
+.fade-in-delay-2{
+
+    opacity:0;
+
+    animation:fadeIn 1s ease .6s forwards;
+
+}
+
+
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   SLIDE ANIMATIONS
+   ========================================================== */
+
+
+.slide-up{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    animation:slideUp 1s ease forwards;
+
+}
+
+
+
+@keyframes slideUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+.slide-left{
+
+    opacity:0;
+
+    transform:translateX(-50px);
+
+    animation:slideLeft 1s ease forwards;
+
+}
+
+
+
+@keyframes slideLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+
+
+.slide-right{
+
+    opacity:0;
+
+    transform:translateX(50px);
+
+    animation:slideRight 1s ease forwards;
+
+}
+
+
+
+@keyframes slideRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   SCALE ANIMATION
+   ========================================================== */
+
+
+.scale-in{
+
+    opacity:0;
+
+    transform:scale(.8);
+
+    animation:scaleIn .8s ease forwards;
+
+}
+
+
+
+@keyframes scaleIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   FLOATING EFFECT
+   ========================================================== */
+
+
+.float{
+
+    animation:floating 4s ease-in-out infinite;
+
+}
+
+
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   PROFILE IMAGE ANIMATION
+   ========================================================== */
+
+
+.profile-animation{
+
+    animation:
+
+    floatImage 5s ease-in-out infinite,
+
+    rotateShadow 5s infinite;
+
+}
+
+
+
+@keyframes floatImage{
+
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:translateY(-20px);
+
+    }
+
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+@keyframes rotateShadow{
+
+
+    0%{
+
+        filter:drop-shadow(0 0 0 rgba(37,99,235,0));
+
+    }
+
+
+    50%{
+
+        filter:drop-shadow(0 20px 25px rgba(37,99,235,.35));
+
+    }
+
+
+    100%{
+
+        filter:drop-shadow(0 0 0 rgba(37,99,235,0));
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   GRADIENT ANIMATION
+   ========================================================== */
+
+
+.gradient-animation{
+
+    background-size:200% 200%;
+
+    animation:gradientMove 5s ease infinite;
+
+}
+
+
+
+@keyframes gradientMove{
+
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   BUTTON EFFECT
+   ========================================================== */
+
+
+.btn-animation{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+.btn-animation::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.25);
+
+    transition:.5s;
+
+}
+
+
+
+.btn-animation:hover::before{
+
+    left:100%;
+
+}
+
+
+
+/* ==========================================================
+   CARD REVEAL
+   ========================================================== */
+
+
+.card-reveal{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    transition:.8s ease;
+
+}
+
+
+
+.card-reveal.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+/* ==========================================================
+   TYPING CURSOR
+   ========================================================== */
+
+
+.typing-cursor::after{
+
+    content:"|";
+
+    margin-left:5px;
+
+    animation:blinkCursor .8s infinite;
+
+}
+
+
+
+@keyframes blinkCursor{
+
+
+    0%{
+
+        opacity:1;
+
+    }
+
+
+    50%{
+
+        opacity:0;
+
+    }
+
+
+    100%{
+
+        opacity:1;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   PARTICLE BACKGROUND
+   ========================================================== */
+
+
+.particle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    animation:particleMove linear infinite;
+
+}
+
+
+
+@keyframes particleMove{
+
+
+    from{
+
+        transform:translateY(100vh);
+
+        opacity:0;
+
+    }
+
+
+    50%{
+
+        opacity:1;
+
+    }
+
+
+    to{
+
+        transform:translateY(-100vh);
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   LOADING DOTS
+   ========================================================== */
+
+
+.loading-dots span{
+
+    display:inline-block;
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    margin:5px;
+
+    animation:dotBounce 1.4s infinite;
+
+}
+
+
+
+.loading-dots span:nth-child(2){
+
+    animation-delay:.2s;
+
+}
+
+
+.loading-dots span:nth-child(3){
+
+    animation-delay:.4s;
+
+}
+
+
+
+@keyframes dotBounce{
+
+
+    0%,
+    80%,
+    100%{
+
+        transform:scale(0);
+
+    }
+
+
+    40%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   REDUCED MOTION SUPPORT
+   ========================================================== */
+
+@media(prefers-reduced-motion:reduce){
+
+    *{
+
+        animation-duration:0.01ms!important;
+
+        animation-iteration-count:1!important;
+
+        transition-duration:0.01ms!important;
+
+    }
+
+}

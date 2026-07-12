@@ -1,44 +1,1011 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Error-Loading</title>
-  <style>
-    *{margin:0;padding:0;}
-    body{margin:10px;}
-    h1{text-align:center;color:red;font-size:25px;animation:alter 2s ease-in-out infinite;}
-    p{text-align:center;color:blue;font-weight:bold;font-size:12px;}
-    footer{position:fixed;bottom:10px;right:70px;}
-    @keyframes alter{
-      0%{
-        color:#fff;
-      }
-      100%{
-        color:red;
-      }
-    }
-    main{color:green;margin:10px;margin-top:40px;text-align:center;font-weight:bolder;}
-    .line{margin:5px;border:1px solid #032451;margin-bottom:5px;}
-    .contact{margin:30px;border:2px solid #160351;padding:30px;border-radius:10px;padding-top:60px;padding-bottom:60px;}
-    #c0{color:orange;font-size:15px;}
-  </style>
+    <!-- ========================================= -->
+    <!-- Basic Meta Tags -->
+    <!-- ========================================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kunal Vats | Machine Learning Engineer</title>
+
+    <meta name="description"
+        content="Official portfolio of Kunal Vats - Machine Learning Engineer, Python Developer and AI Enthusiast.">
+
+    <meta name="keywords"
+        content="Machine Learning, Artificial Intelligence, Python, Flask, Portfolio, Data Science, Scikit Learn">
+
+    <meta name="author" content="Kunal Vats">
+
+    <meta name="theme-color" content="#0F172A">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kunal Vats | Machine Learning Engineer">
+    <meta property="og:description"
+        content="Machine Learning Engineer Portfolio showcasing AI projects, Python development, and ML applications.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
+
 <body>
-  <h1>503</h1>
-  <h1>Service Unavailable</h1>
-  <br>
-  <div class="line"></div>
-  <p>ngnx</p>
-  <main>
-    Webite is under development
-  </main>
-  <p>wait till 30th June 2026...</p>
-  <div class="contact">
-      <p id="c0">CONTACT ( Email Id ): kunalvats7988@gmail.com</p>
-  </div>
-  <footer>&copy2026.Personal-Portfolio.mdu
-  </footer>
+
+    <!-- ========================================= -->
+    <!-- Scroll Progress -->
+    <!-- ========================================= -->
+
+    <div id="progressBar"></div>
+
+    <!-- ========================================= -->
+    <!-- Header -->
+    <!-- ========================================= -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="navbar">
+
+                <!-- Logo -->
+
+                <a href="index.html" class="logo">
+
+                    <span>KV</span>
+
+                </a>
+
+                <!-- Navigation -->
+
+                <nav class="nav-menu">
+
+                    <ul>
+
+                        <li>
+                            <a href="index.html" class="active">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="skills.html">
+                                Skills
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="projects.html">
+                                Projects
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="experience.html">
+                                Experience
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="resume.html">
+                                Resume
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <!-- Right Buttons -->
+
+                <div class="nav-actions">
+
+                    <button id="themeToggle">
+
+                        🌙
+
+                    </button>
+
+                    <button class="menu-btn">
+
+                        ☰
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ========================================= -->
+    <!-- Hero Section -->
+    <!-- ========================================= -->
+
+    <section class="hero">
+
+        <div class="container hero-grid">
+
+            <!-- Left -->
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+
+                    MACHINE LEARNING ENGINEER
+
+                </span>
+
+                <h1>
+
+                    Hi,
+
+                    I'm
+
+                    <span>
+
+                        Kunal Vats
+
+                    </span>
+
+                </h1>
+
+                <h2>
+
+                    <span id="typing"></span>
+
+                </h2>
+
+                <p>
+
+                    Passionate about Artificial Intelligence,
+                    Machine Learning, Data Science,
+                    Python Development, and building
+                    intelligent web applications using
+                    Flask and Scikit-Learn.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="projects.html" class="btn primary-btn">
+
+                        Explore Projects
+
+                    </a>
+
+                    <a href="resume.html" class="btn secondary-btn">
+
+                        View Resume
+
+                    </a>
+
+                </div>
+                <br>
+                <!-- Quick Stats -->
+
+                <div class="hero-stats">
+
+                    <div>
+
+                        <h3>
+
+                            10+
+
+                        </h3>
+
+                        <span>
+
+                            ML Projects
+
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+
+                            15+
+
+                        </h3>
+
+                        <span>
+
+                            Technologies
+
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+
+                            100%
+
+                        </h3>
+
+                        <span>
+
+                            Learning Passion
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="hero-image">
+
+                <div class="profile-card">
+
+                    <img src="assets/images/profile.png"
+                        alt="Kunal Vats">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- About Preview -->
+    <!-- ========================================= -->
+
+    <section class="about-preview">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h2>
+
+                    About Me
+
+                </h2>
+
+                <p>
+
+                    Turning ideas into intelligent applications.
+
+                </p>
+
+            </div>
+
+            <div class="about-preview-grid">
+
+                <div>
+
+                    <p>
+
+                        I am currently pursuing B.Tech in Computer Science
+                        Engineering (Artificial Intelligence & Machine Learning).
+
+                        I enjoy building Machine Learning applications,
+                        exploring AI technologies,
+                        and developing real-world solutions using
+                        Python, Flask, SQL, and Scikit-Learn.
+
+                    </p>
+                    <br>
+                    <a href="about.html" class="btn primary-btn">
+
+                        Read More
+
+                    </a>
+
+                </div>
+                <br>
+                <div class="about-card">
+
+                    <div>
+
+                        <strong>Name</strong>
+
+                        <p>Kunal Vats</p>
+
+                    </div>
+
+                    <div>
+
+                        <strong>Role</strong>
+
+                        <p>Machine Learning Engineer</p>
+
+                    </div>
+
+                    <div>
+
+                        <strong>Location</strong>
+
+                        <p>Haryana, India</p>
+
+                    </div>
+
+                    <div>
+
+                        <strong>Education</strong>
+
+                        <p>B.Tech CSE (AI & ML)</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+        <!-- ========================================= -->
+    <!-- Skills Preview -->
+    <!-- ========================================= -->
+
+    <section class="skills-preview">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h2>
+
+                    Technical Skills
+
+                </h2>
+
+                <p>
+
+                    Technologies and tools I use to build intelligent applications.
+
+                </p>
+
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h3>Python</h3>
+                    <p>Programming</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>NumPy</h3>
+                    <p>Numerical Computing</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Pandas</h3>
+                    <p>Data Analysis</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Matplotlib</h3>
+                    <p>Visualization</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Seaborn</h3>
+                    <p>Statistical Charts</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Scikit-Learn</h3>
+                    <p>Machine Learning</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Flask</h3>
+                    <p>Backend Development</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>SQL</h3>
+                    <p>Database</p>
+                </div>
+
+            </div>
+             <br>
+            <div class="section-button">
+
+                <a href="skills.html" class="btn primary-btn">
+
+                    View All Skills
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- Machine Learning Roadmap -->
+    <!-- ========================================= -->
+
+    <section class="roadmap">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h2>
+
+                    Machine Learning Learning Journey
+
+                </h2>
+
+                <p>
+
+                    My roadmap towards becoming a Machine Learning Engineer.
+
+                </p>
+
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item completed">
+                    <span>01</span>
+                    <h3>Python</h3>
+                </div>
+
+                <div class="timeline-item completed">
+                    <span>02</span>
+                    <h3>NumPy</h3>
+                </div>
+
+                <div class="timeline-item completed">
+                    <span>03</span>
+                    <h3>Pandas</h3>
+                </div>
+
+                <div class="timeline-item completed">
+                    <span>04</span>
+                    <h3>Matplotlib</h3>
+                </div>
+
+                <div class="timeline-item completed">
+                    <span>05</span>
+                    <h3>Seaborn</h3>
+                </div>
+
+                <div class="timeline-item completed">
+                    <span>06</span>
+                    <h3>Statistics</h3>
+                </div>
+
+                <div class="timeline-item completed">
+                    <span>07</span>
+                    <h3>Linear Regression</h3>
+                </div>
+
+                <div class="timeline-item completed">
+                    <span>08</span>
+                    <h3>Logistic Regression</h3>
+                </div>
+
+                <div class="timeline-item completed">
+                    <span>09</span>
+                    <h3>KNN Classification</h3>
+                </div>
+
+                <div class="timeline-item">
+                    <span>10</span>
+                    <h3>Decision Tree</h3>
+                </div>
+
+                <div class="timeline-item">
+                    <span>11</span>
+                    <h3>Random Forest</h3>
+                </div>
+
+                <div class="timeline-item">
+                    <span>12</span>
+                    <h3>Support Vector Machine</h3>
+                </div>
+
+                <div class="timeline-item">
+                    <span>13</span>
+                    <h3>Naive Bayes</h3>
+                </div>
+
+                <div class="timeline-item">
+                    <span>14</span>
+                    <h3>K-Means Clustering</h3>
+                </div>
+
+                <div class="timeline-item">
+                    <span>15</span>
+                    <h3>Principal Component Analysis</h3>
+                </div>
+
+                <div class="timeline-item">
+                    <span>16</span>
+                    <h3>Deep Learning</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- Featured Projects -->
+    <!-- ========================================= -->
+
+    <section class="featured-projects">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h2>
+
+                    Featured Projects
+
+                </h2>
+
+                <p>
+
+                    A selection of Machine Learning projects I've built.
+
+                </p>
+
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+
+                    <img src="assets/images/project1.jpeg"
+                        alt="Student Performance Prediction">
+
+                    <h3>
+
+                        Student Performance Prediction
+
+                    </h3>
+
+                    <p>
+
+                        Linear Regression model to predict student performance.
+
+                    </p>
+
+                    <a href="projects.html">
+
+                        Learn More →
+
+                    </a>
+
+                </article>
+
+                <article class="project-card">
+
+                    <img src="assets/images/project2.jpeg"
+                        alt="Titanic Survival Prediction">
+
+                    <h3>
+
+                        Titanic Survival Prediction
+
+                    </h3>
+
+                    <p>
+
+                        KNN Classification model trained using the Titanic dataset.
+
+                    </p>
+
+                    <a href="projects.html">
+
+                        Learn More →
+
+                    </a>
+
+                </article>
+
+                <article class="project-card">
+
+                    <img src="assets/images/project3.jpeg"
+                        alt="Email Spam Detection">
+
+                    <h3>
+
+                        Email Spam Detection
+
+                    </h3>
+
+                    <p>
+
+                        Logistic Regression with NLP preprocessing for spam detection.
+
+                    </p>
+
+                    <a href="projects.html">
+
+                        Learn More →
+
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+        <!-- ========================================= -->
+    <!-- GitHub & Coding Statistics -->
+    <!-- ========================================= -->
+
+    <section class="github-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h2>
+
+                    GitHub & Coding Activity
+
+                </h2>
+
+                <p>
+
+                    I enjoy building projects, learning new technologies, and sharing
+                    my work through GitHub.
+
+                </p>
+
+            </div>
+
+            <div class="github-grid">
+
+                <div class="github-card">
+
+                    <h3>
+
+                        Open Source
+
+                    </h3>
+
+                    <p>
+
+                        Building Machine Learning, Python, Flask and AI projects
+                        while continuously improving problem-solving skills.
+
+                    </p>
+
+                    <a href="https://github.com/practical-work" target="_blank">
+
+                        Visit GitHub
+
+                    </a>
+
+                </div>
+
+                <div class="github-card">
+
+                    <h3>
+
+                        Technologies
+
+                    </h3>
+
+                    <ul>
+
+                        <li>Python</li>
+
+                        <li>Scikit-Learn</li>
+
+                        <li>Flask</li>
+
+                        <li>HTML</li>
+
+                        <li>CSS</li>
+
+                        <li>JavaScript</li>
+
+                        <li>Git & GitHub</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- Learning Experience -->
+    <!-- ========================================= -->
+
+    <section class="experience-preview">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h2>
+
+                    Learning Experience
+
+                </h2>
+
+                <p>
+
+                    Every project helps me become a better Machine Learning Engineer.
+
+                </p>
+
+            </div>
+
+            <div class="experience-grid">
+
+                <div class="experience-card">
+
+                    <h3>
+
+                        Machine Learning
+
+                    </h3>
+
+                    <p>
+
+                        Learning supervised machine learning algorithms,
+                        data preprocessing, model evaluation, feature engineering,
+                        and deployment using Flask.
+
+                    </p>
+
+                </div>
+
+                <div class="experience-card">
+
+                    <h3>
+
+                        Python Development
+
+                    </h3>
+
+                    <p>
+
+                        Building applications using Python, object-oriented programming,
+                        automation, and backend development.
+
+                    </p>
+
+                </div>
+
+                <div class="experience-card">
+
+                    <h3>
+
+                        Web Development
+
+                    </h3>
+
+                    <p>
+
+                        Developing responsive websites using HTML, CSS,
+                        JavaScript, and integrating Machine Learning models
+                        into web applications.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="section-button">
+
+                <a href="experience.html" class="btn primary-btn">
+
+                    View Full Journey
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- Call To Action -->
+    <!-- ========================================= -->
+
+    <section class="cta-section">
+
+        <div class="container">
+
+            <div class="cta-card">
+
+                <h2>
+
+                    Let's Build Something Amazing Together
+
+                </h2>
+
+                <p>
+
+                    Interested in collaborating on Machine Learning,
+                    AI, Python, or Web Development projects?
+                    Feel free to get in touch.
+
+                </p>
+
+                <div class="cta-buttons">
+
+                    <a href="contact.html" class="btn primary-btn">
+
+                        Contact Me
+
+                    </a>
+
+                    <a href="resume.html" class="btn secondary-btn">
+
+                        Download Resume
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- Footer -->
+    <!-- ========================================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+
+                    <h3>
+
+                        Kunal Vats
+
+                    </h3>
+
+                    <p>
+
+                        Machine Learning Engineer |
+                        Python Developer |
+                        AI Enthusiast
+
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h4>
+
+                        Quick Links
+
+                    </h4>
+
+                    <ul>
+
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="projects.html">Projects</a></li>
+
+                        <li><a href="skills.html">Skills</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <h4>
+
+                        Connect
+
+                    </h4>
+
+                    <ul>
+
+                        <li>
+                            <a href="https://github.com/practical-work" target="_blank">
+                                GitHub
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.linkedin.com/in/kunal-vats-46b69b313?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+                                LinkedIn
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Email
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p class="copyright">
+
+                © 2026 Kunal Vats. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ========================================= -->
+    <!-- JavaScript Files -->
+    <!-- ========================================= -->
+
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/typing.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
